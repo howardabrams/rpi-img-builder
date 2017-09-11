@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Begin with making sure the C++11 compiler is the defailt:
+apt-get install -y g++-4.7 --fix-missing
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.6 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.6
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.7 40 --slave /usr/bin/g++ g++ /usr/bin/g++-4.7
+update-alternatives --config gcc
+
+# Install all the lovely python packages:
+pip3 install pyfrc 
+pip3 install pybind11==2.0.1
+# pip3 install robotpy-cscore
+

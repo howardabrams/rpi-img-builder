@@ -12,7 +12,7 @@
 
 PATH="/sbin:/bin:/usr/bin"
 
-HOSTNAME="raspberrypi"
+HOSTNAME="micer"
 
 if [ -e /var/tmp/system-hostname ]; then
 	if [ -e /etc/hostname ]; then
